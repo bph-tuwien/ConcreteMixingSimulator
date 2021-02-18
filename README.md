@@ -15,3 +15,20 @@ https://github.com/bph-tuwien/ConcreteMixingSimulator/releases
  * You can drop an object by clicking the right mouse button.
  * You can use an object by aiming with the crosshair for another (target) object and clicking the left mouse button while holding the object. For example, pick up the spoon and aim for a labeled ingredient jar (except oil) to take ingredients out of the jar. Some objects don't require another object to be used. 
  * The game can be restarted by pressing the R key, and excited by pressing the Escape key.
+
+## Developer Guide
+
+### Software requirements
+
+ * The project is using Unreal Engine version 4.26.0
+ * Voxel models were made in an open source voxel editor, MagicaVoxel.
+ * Obj exports were pivot corrected (due to MagicaVoxel issue) in Blender.
+
+### Blueprint settings
+
+The entire logic of the game is implemented in Unreal Blueprints. These were formatted with the assumption that the Blueprint curves are flattened out to linear lines. 
+This can be achieved by going into Preferences/Editor Preferences/Content Editors/Graph Editors/Splines and expanding the advanced settings with the arrow, and setting the 4 vector2-s that are mentioning Tangents to 0 vectors. Without these settings, Blueprints might look suboptimal in formatting making it difficult to comprehend.
+
+### Logic Structure
+
+
