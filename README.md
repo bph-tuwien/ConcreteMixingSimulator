@@ -31,4 +31,10 @@ This can be achieved by going into Preferences/Editor Preferences/Content Editor
 
 ### Logic Structure
 
-
+The implementation is split into 3 different types of Blueprints:
+ 1. FirstPersonCharacter: (Content/FirstPersonBP/Blueprints/FirstPersonCharacter)
+    Containing the Player Controller logic, like input handling, moving, and object pick up.
+ 2. GameLogic: (Content/Logics/GameLogic)
+    Containing object interaction logics, like what happens when the spoon is used on the cement jar. Also the checks are implemented in this blueprint to handle the attempt on the instructions in the book.
+ 3. Object Blueprints: (Content/Objects/ObjectBP)
+    Containing mostly the given object's visual feedback for interactions.
