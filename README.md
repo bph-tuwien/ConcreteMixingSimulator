@@ -4,7 +4,7 @@
 
 1. Download the latest version of either the Win or Mac version of the game from the releases page:
 https://github.com/bph-tuwien/ConcreteMixingSimulator/releases
-2. Extract the archive to a desired folder.
+2. Extract the archive to the desired folder.
 3. Start the game by running the `ConcreteMixing.exe` or on Mac the `ConcreteMixing.app`.
 
 ## How to Play
@@ -37,4 +37,6 @@ The implementation is split into 3 different types of Blueprints:
  2. GameLogic: (Content/Logics/GameLogic)
     Containing object interaction logics, like what happens when the spoon is used on the cement jar. Also the checks are implemented in this blueprint to handle the attempt on the instructions in the book.
  3. Object Blueprints: (Content/Objects/ObjectBP)
-    Containing mostly the given object's visual feedback for interactions.
+    Containing mostly the given object's visual feedback for interactions, but in some cases the game logic bled into them.
+
+
