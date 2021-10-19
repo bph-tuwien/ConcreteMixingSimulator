@@ -1,0 +1,19 @@
+{
+    "recipes": [
+        {
+            "id": 1,
+            "name": "Apple",
+            "count": 1
+        },
+        {
+            "id": 2,
+            "name": "Banana",
+            "count": 1
+        },
+        {
+            "id": 3,
+            "name": "Orange",
+            "count": 3
+        }
+    ]
+}
