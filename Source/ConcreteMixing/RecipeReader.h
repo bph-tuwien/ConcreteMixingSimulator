@@ -20,6 +20,7 @@ class CONCRETEMIXING_API URecipeReader : public UBlueprintFunctionLibrary
 	GENERATED_BODY()
 
 		UFUNCTION(BlueprintCallable, Category = "File I/O")
-		static FString EvaluateMixture(FString Filename);
+		static FString EvaluateMixture(int cement, int flyAsh, int recycledConcrete,
+									   int sand, int water, int juteFibers);
 	
 };
