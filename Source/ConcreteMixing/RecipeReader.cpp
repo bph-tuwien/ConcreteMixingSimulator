@@ -8,7 +8,8 @@
 
 
 FString URecipeReader::EvaluateMixture(int cement, int flyAsh, int recycledConcrete,
-									   int sand, int water, int juteFibers)
+									   int sand, int water, int juteFibers,
+									   int& id, bool& ok, FString& name, FString& description)
 {
 	FString result;
 
@@ -111,7 +112,10 @@ FString URecipeReader::EvaluateMixture(int cement, int flyAsh, int recycledConcr
 	}
 
 
-
+	id = matchingRecipeIndex;
+	ok = recipes[id].ok;
+	name = recipes[id].name;
+	description = recipes[id].description;
 
 
 	return FString::FromInt(matchingRecipeIndex);
