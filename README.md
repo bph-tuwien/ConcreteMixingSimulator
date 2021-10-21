@@ -16,6 +16,50 @@ https://github.com/bph-tuwien/ConcreteMixingSimulator/releases
  * You can use an object by aiming with the crosshair for another (target) object and clicking the left mouse button while holding the object. For example, pick up the spoon and aim for a labeled ingredient jar (except oil) to take ingredients out of the jar. Some objects don't require another object to be used. 
  * The game can be restarted by pressing the R key, and excited by pressing the Escape key.
 
+## How to Define Concrete Recipes
+
+The concrete recipes can be found and edited in a JSON file under ConcreteMixing/Content/recipesConfig.json. This is a text based config file following the JSON format which list the concrete recipes in a list. A recipe in the recipes list has the following structure.
+```
+{
+   "id": 0,
+   "ok": true,
+   "name": "Simple Mixture",
+   "description": "So simple, it makes everything perfect!",
+   "cementMin": 80,
+   "cementMax": 90,
+   "flyAshMin": 10,
+   "flyAshMax": 15,
+   "recycledConcreteMin": 60,
+   "recycledConcreteMax": 65,
+   "sandMin": 240,
+   "sandMax": 260,
+   "waterMin": 60,
+   "waterMax": 70,
+   "juteFibersMin": 50,
+   "juteFibersMax": 60
+}
+```
+To define a new one, duplicate a config section like this one in the config file, and don't forget to put a comma after the `}` character, except if it's the last recipe in the list.
+
+A recipe has the following values:
+ * id: A unique identification number of each recipe which should be different for each recipe. (However, currently not used.)
+ * ok: A `true` or `false` value which defines if a recipe is a good one or a bad one.
+ * name: The name of the recipe. This one will be displayed in the book on evaluation. If too long and it's hanging off of the book then `<br>` tags can be used to create a new line.
+ * description: The description of the recipe. This one will be displayed in the book on evaluation. If too long and it's hanging off of the book then `<br>` tags can be used to create a new line.
+ * cementMin: The minimum (inclusive) amount of cement that needs to be in the mixture to qualify for the given recipe.
+ * cementMax: The maximum (inclusive) amount of cement that needs to be in the mixture to qualify for the given recipe.
+ * flyAshMin: The minimum (inclusive) amount of fly ash that needs to be in the mixture to qualify for the given recipe.
+ * flyAshMax: The maximum (inclusive) amount of fly ash that needs to be in the mixture to qualify for the given recipe.
+ * recycledConcreteMin: The minimum (inclusive) amount of recycled concrete that needs to be in the mixture to qualify for the given recipe.
+ * recycledConcreteMax: The maximum (inclusive) amount of recycled concrete that needs to be in the mixture to qualify for the given recipe.
+ * sandMin: The minimum (inclusive) amount of sand that needs to be in the mixture to qualify for the given recipe.
+ * sandMax: The maximum (inclusive) amount of sand that needs to be in the mixture to qualify for the given recipe.
+ * waterMin: The minimum (inclusive) amount of water that needs to be in the mixture to qualify for the given recipe.
+ * waterMax: The maximum (inclusive) amount of water that needs to be in the mixture to qualify for the given recipe.
+ * juteFibersMin: The minimum (inclusive) amount of jute fibers that needs to be in the mixture to qualify for the given recipe.
+ * juteFibersMax: The maximum (inclusive) amount of jute fibers that needs to be in the mixture to qualify for the given recipe.
+ 
+
 ## Developer Guide
 
 ### Software requirements
