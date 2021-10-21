@@ -35,6 +35,24 @@
             "waterMax": 150,
             "juteFibersMin": 50,
             "juteFibersMax": 60
+        },
+        {
+            "id": 2,
+            "ok": false,
+            "name": "Minimal Mixture",
+            "description": "So minimal!",
+            "cementMin": 10,
+            "cementMax": 20,
+            "flyAshMin": 10,
+            "flyAshMax": 20,
+            "recycledConcreteMin": 10,
+            "recycledConcreteMax": 20,
+            "sandMin": 10,
+            "sandMax": 20,
+            "waterMin": 10,
+            "waterMax": 20,
+            "juteFibersMin": 10,
+            "juteFibersMax": 20
         }
     ]
 }
