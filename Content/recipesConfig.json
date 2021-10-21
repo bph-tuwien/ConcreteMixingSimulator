@@ -1,0 +1,58 @@
+{
+    "recipes": [
+        {
+            "id": 0,
+            "ok": true,
+            "name": "Simple Mixture",
+            "description": "So simple, it makes everything perfect!",
+            "cementMin": 80,
+            "cementMax": 90,
+            "flyAshMin": 10,
+            "flyAshMax": 15,
+            "recycledConcreteMin": 60,
+            "recycledConcreteMax": 65,
+            "sandMin": 240,
+            "sandMax": 260,
+            "waterMin": 60,
+            "waterMax": 70,
+            "juteFibersMin": 50,
+            "juteFibersMax": 60
+        },
+        {
+            "id": 1,
+            "ok": false,
+            "name": "Wet Mixture",
+            "description": "So wet, it makes everything watery!",
+            "cementMin": 80,
+            "cementMax": 90,
+            "flyAshMin": 10,
+            "flyAshMax": 15,
+            "recycledConcreteMin": 40,
+            "recycledConcreteMax": 45,
+            "sandMin": 200,
+            "sandMax": 220,
+            "waterMin": 120,
+            "waterMax": 150,
+            "juteFibersMin": 50,
+            "juteFibersMax": 60
+        },
+        {
+            "id": 2,
+            "ok": false,
+            "name": "Minimal Mixture",
+            "description": "So minimal!",
+            "cementMin": 10,
+            "cementMax": 20,
+            "flyAshMin": 10,
+            "flyAshMax": 20,
+            "recycledConcreteMin": 10,
+            "recycledConcreteMax": 20,
+            "sandMin": 10,
+            "sandMax": 20,
+            "waterMin": 10,
+            "waterMax": 20,
+            "juteFibersMin": 10,
+            "juteFibersMax": 20
+        }
+    ]
+}
